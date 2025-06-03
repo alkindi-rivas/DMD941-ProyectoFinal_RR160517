@@ -1,0 +1,116 @@
+﻿<ConfigurationSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Database>
+    <DataSources>
+      <DataSource>
+        <ID>Tienda Camisetas DW</ID>
+        <ConnectionString>Provider=MSOLEDBSQL.1;Data Source=localhost\SSAS_MULTIDIM;Persist Security Info=False;Integrated Security=SSPI;Initial Catalog=TiendaCamisetasDW</ConnectionString>
+        <ImpersonationInfo>
+          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateServiceAccount</ImpersonationMode>
+          <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+        </ImpersonationInfo>
+      </DataSource>
+    </DataSources>
+    <Dimensions>
+      <Dimension>
+        <ID>Dim Cliente</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Gasto</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Tiempo</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Producto</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Vendedor</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Hecho Gastos</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Cliente 1</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Gasto 1</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Tiempo 1</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Vendedor 1</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Producto 1</ID>
+      </Dimension>
+    </Dimensions>
+    <Cubes>
+      <Cube>
+        <ID>Tienda Camisetas DW</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Dim Cliente</ID>
+            <Partitions>
+              <Partition>
+                <ID>Dim Cliente</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Dim Gasto</ID>
+            <Partitions>
+              <Partition>
+                <ID>Dim Gasto</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Dim Tiempo</ID>
+            <Partitions>
+              <Partition>
+                <ID>Dim Tiempo</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Dim Producto</ID>
+            <Partitions>
+              <Partition>
+                <ID>Dim Producto</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Dim Vendedor</ID>
+            <Partitions>
+              <Partition>
+                <ID>Dim Vendedor</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Hecho Ventas</ID>
+            <Partitions>
+              <Partition>
+                <ID>Hecho Ventas</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Hecho Gastos</ID>
+            <Partitions>
+              <Partition>
+                <ID>Hecho Gastos</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+    </Cubes>
+    <DataSourceImpersonationInfo>
+      <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>
+      <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+    </DataSourceImpersonationInfo>
+  </Database>
+</ConfigurationSettings>

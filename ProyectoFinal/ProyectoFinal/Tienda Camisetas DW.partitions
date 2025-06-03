@@ -1,0 +1,145 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="90354733-96db-43b0-8fd5-a85ab6a2ed4c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Tienda Camisetas DW</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Dim Cliente</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="fb501ce9-5d10-4acb-bf36-dcaff4b77bed">
+          <ID>Dim Cliente</ID>
+          <Name>Dim Cliente</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="fef6bc46-9d81-4752-980c-99be19115424">
+            <DataSourceViewID>Tienda Camisetas DW</DataSourceViewID>
+            <TableID>dbo_dim_cliente</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dim Gasto</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="9f0ac98b-1682-49b4-b552-67620fd4806c">
+          <ID>Dim Gasto</ID>
+          <Name>Dim Gasto</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="4b90fe23-3990-4582-9451-ccd9e28e3c07">
+            <DataSourceViewID>Tienda Camisetas DW</DataSourceViewID>
+            <TableID>dbo_dim_gasto</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dim Tiempo</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="0b76726a-9206-4b90-9842-57566b6e30ed">
+          <ID>Dim Tiempo</ID>
+          <Name>Dim Tiempo</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="36f001a7-ac28-44f1-af6b-de5fc7f4297b">
+            <DataSourceViewID>Tienda Camisetas DW</DataSourceViewID>
+            <TableID>dbo_dim_tiempo</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dim Producto</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="673136bc-f4d2-4b35-880c-ffa8e6a988d5">
+          <ID>Dim Producto</ID>
+          <Name>Dim Producto</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="5d72222b-46bc-4752-910e-bc826c8a4718">
+            <DataSourceViewID>Tienda Camisetas DW</DataSourceViewID>
+            <TableID>dbo_dim_producto</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dim Vendedor</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="0ccb5c66-e015-4008-9a0e-2ddb5c39d7f5">
+          <ID>Dim Vendedor</ID>
+          <Name>Dim Vendedor</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="626ebe36-3b80-446f-9b98-0b1e717a2674">
+            <DataSourceViewID>Tienda Camisetas DW</DataSourceViewID>
+            <TableID>dbo_dim_vendedor</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Hecho Ventas</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="e7303cdd-178f-401c-9094-4cca4c74756d">
+          <ID>Hecho Ventas</ID>
+          <Name>Hecho Ventas</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="0e1e9ccb-ad6a-480b-9ed5-75e23b413266">
+            <DataSourceViewID>Tienda Camisetas DW</DataSourceViewID>
+            <TableID>dbo_hecho_ventas</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Hecho Gastos</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="0f6d4cef-f3fc-4557-885a-a02677d4c48d">
+          <ID>Hecho Gastos</ID>
+          <Name>Hecho Gastos</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="c14c814d-90fc-471c-8899-797399844759">
+            <DataSourceViewID>Tienda Camisetas DW</DataSourceViewID>
+            <TableID>dbo_hecho_gastos</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>
